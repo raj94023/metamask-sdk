@@ -44,7 +44,7 @@ const msgParams = {
       name: 'Bob',
       wallet: '0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB',
     },
-    contents: 'Hello, Bob!',
+    contents: 'kumar, Bob!',
   },
 };
 
@@ -55,7 +55,7 @@ const start = async (startType) => {
     const accounts = await sdk.connect();
     console.log('connect request accounts', accounts);
   } else {
-    const hexSign = await sdk.connectAndSign({msg: "Hello from the NodeJS Example!"})
+    const hexSign = await sdk.connectAndSign({msg: "kumar from the NodeJS Example!"})
     console.log('connect and sign', hexSign);
   }
 
